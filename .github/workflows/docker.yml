@@ -28,5 +28,6 @@ jobs:
           context: .
           push: true
           run:  echo "${{secrets.DOCKERHUB_USERNAME}}/${{secrets.DOCKERHUB_REPO_NAME}}:latest"
-          tags: ${{secrets.DOCKERHUB_USERNAME}}/${{secrets.DOCKERHUB_REPO_NAME}}:latest
+          tags: chandrabhan1215/django-todo-app:latest
+          
 
