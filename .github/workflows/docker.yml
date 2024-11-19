@@ -25,7 +25,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: "{{defaultContext}}:server"
+          context: .
           push: true
           run:  echo "Debug print---${{secrets.DOCKERHUB_USERNAME}}/${{secrets.DOCKERHUB_REPO_NAME}}:latest"
           tags: chandrabhan1215/django-todo-app:latest
